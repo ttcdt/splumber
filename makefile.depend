@@ -1,0 +1,19 @@
+sp_grx.o: sp_grx.c config.h $(QDGDF)/qdgdf_video.h $(QDGDF)/qdgdf_audio.h \
+  sp_supp.h sp_types.h sp_grx.h
+splumber.o: splumber.c config.h $(QDGDF)/qdgdf_video.h $(QDGDF)/qdgdf_audio.h \
+  sp_supp.h sp_types.h sp_grx.h sp_ray.h sp_map.h sp_maze.h sp_play.h \
+  sp_param.h
+sp_map.o: sp_map.c config.h $(QDGDF)/qdgdf_video.h $(QDGDF)/qdgdf_audio.h \
+  sp_supp.h sp_types.h sp_ray.h sp_grx.h sp_map.h
+sp_maze.o: sp_maze.c config.h $(QDGDF)/qdgdf_video.h $(QDGDF)/qdgdf_audio.h \
+  sp_types.h sp_supp.h sp_grx.h sp_ray.h sp_map.h sp_maze.h sp_play.h
+sp_param.o: sp_param.c config.h sp_types.h sp_supp.h sp_grx.h sp_ray.h \
+  sp_map.h sp_maze.h sp_play.h
+sp_play.o: sp_play.c config.h $(QDGDF)/qdgdf_video.h $(QDGDF)/qdgdf_audio.h \
+  sp_types.h sp_supp.h sp_grx.h sp_ray.h sp_map.h sp_play.h sp_maze.h
+sp_ray.o: sp_ray.c config.h $(QDGDF)/qdgdf_video.h $(QDGDF)/qdgdf_audio.h \
+  sp_supp.h sp_types.h sp_grx.h sp_ray.h sp_map.h sp_play.h
+sp_supp.o: sp_supp.c config.h $(QDGDF)/qdgdf_video.h $(QDGDF)/qdgdf_audio.h \
+  sp_types.h sp_supp.h
+xpal.o: xpal.c
+xpck.o: xpck.c

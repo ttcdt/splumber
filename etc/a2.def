@@ -1,0 +1,303 @@
+; Definiciones para el área 2
+
+; Información general
+name=URANIUM SILO
+palette=graph/a2.pal
+water_texture=graph/watera2.pcx
+
+; Sonidos generales
+snd_underwater=sound/rumour.wav
+snd_water=sound/water1.wav
+snd_left_step=sound/leftstep.wav
+snd_right_step=sound/ritestep.wav
+snd_wleft_step=sound/inh2o.wav
+snd_wright_step=sound/inh2o.wav
+snd_player_dead=sound/h2odeath.wav
+snd_pump=sound/winch2.wav
+snd_console=sound/sfx034a.wav
+snd_water_go=sound/water4.wav
+
+; sonidos aleatorios sobre el agua
+over_water_sounds=sound/drone6.wav
+over_water_sounds=sound/60.wav
+over_water_sounds=sound/hydro1.wav
+over_water_sounds=sound/hydro2.wav
+over_water_sounds=sound/drip1.wav
+over_water_sounds=sound/comp1.wav
+over_water_sounds=sound/klaxon.wav
+over_water_sounds=sound/buzz1.wav
+over_water_sounds=sound/fl_hum1.wav
+
+; sonidos aleatorios bajo el agua
+under_water_sounds=sound/water2.wav
+under_water_sounds=sound/water3.wav
+under_water_sounds=sound/death.wav
+under_water_sounds=sound/cienci~1.wav
+under_water_sounds=sound/cienci~3.wav
+under_water_sounds=sound/drone6.wav
+under_water_sounds=sound/60.wav
+
+
+;
+; Muro chapa
+;
+[style]
+wall=graph/walla201.pcx
+step=graph/walla202.pcx
+floor=graph/ceila201.pcx
+ceiling=graph/ceila201.pcx
+
+pump1off=graph/walla206.pcx
+pump1on=graph/walla205.pcx
+
+pump2off=graph/walla207.pcx
+pump2on=graph/walla208.pcx
+
+console1=graph/walla210.pcx
+console2=graph/walla211.pcx
+consoleoff=graph/walla209.pcx
+
+; Simbolo chino
+effect=static
+texture1=graph/walla215.pcx
+
+; Radiactividad
+effect=static
+texture1=graph/walla217.pcx
+
+; Radiactividad (en circulo)
+effect=blink
+texture1=graph/walla218.pcx
+texture2=graph/walla219.pcx
+
+; Radiactividad (en circulo) y con luz
+effect=blink_light
+texture1=graph/walla218.pcx
+texture2=graph/walla219.pcx
+
+
+;
+; Muro mech1
+;
+[style]
+wall=graph/walla202.pcx
+step=graph/walla202.pcx
+floor=graph/ceila201.pcx
+ceiling=graph/ceila201.pcx
+
+pump1off=graph/walla206.pcx
+pump1on=graph/walla205.pcx
+
+pump2off=graph/walla207.pcx
+pump2on=graph/walla208.pcx
+
+console1=graph/walla210.pcx
+console2=graph/walla211.pcx
+consoleoff=graph/walla209.pcx
+
+; Mech1 con vigas H
+effect=static
+texture1=graph/walla213.pcx
+
+; Simbolo chino
+effect=static
+texture1=graph/walla215.pcx
+
+; Reja
+effect=static
+texture1=graph/walla204.pcx
+
+; Radiactividad
+effect=static
+texture1=graph/walla217.pcx
+
+; Radiactividad (en circulo)
+effect=blink
+texture1=graph/walla218.pcx
+texture2=graph/walla219.pcx
+
+; Radiactividad (en circulo) y con luz
+effect=blink_light
+texture1=graph/walla218.pcx
+texture2=graph/walla219.pcx
+
+
+;
+; Muro mech1 H
+;
+[style]
+wall=graph/walla213.pcx
+step=graph/walla202.pcx
+floor=graph/walla204.pcx
+ceiling=graph/ceila201.pcx
+
+pump1off=graph/walla206.pcx
+pump1on=graph/walla205.pcx
+
+pump2off=graph/walla207.pcx
+pump2on=graph/walla208.pcx
+
+console1=graph/walla210.pcx
+console2=graph/walla211.pcx
+consoleoff=graph/walla209.pcx
+
+
+; Mech1 con vigas
+effect=static
+texture1=graph/walla202.pcx
+
+; Simbolo chino
+effect=static
+texture1=graph/walla215.pcx
+
+; Reja
+effect=static
+texture1=graph/walla204.pcx
+
+; Radiactividad
+effect=static
+texture1=graph/walla217.pcx
+
+; Radiactividad (en circulo)
+effect=blink
+texture1=graph/walla218.pcx
+texture2=graph/walla219.pcx
+
+; Radiactividad (en circulo) y con luz
+effect=blink_light
+texture1=graph/walla218.pcx
+texture2=graph/walla219.pcx
+
+
+
+;
+; Muro mech2
+;
+[style]
+wall=graph/walla203.pcx
+step=graph/walla202.pcx
+floor=graph/ceila201.pcx
+ceiling=graph/ceila201.pcx
+
+pump1off=graph/walla206.pcx
+pump1on=graph/walla205.pcx
+
+pump2off=graph/walla207.pcx
+pump2on=graph/walla208.pcx
+
+console1=graph/walla210.pcx
+console2=graph/walla211.pcx
+consoleoff=graph/walla209.pcx
+
+; Mech2 con vigas H
+effect=static
+texture1=graph/walla214.pcx
+
+; Simbolo chino
+effect=static
+texture1=graph/walla215.pcx
+
+; Radiactividad
+effect=static
+texture1=graph/walla217.pcx
+
+; Radiactividad (en circulo)
+effect=blink
+texture1=graph/walla218.pcx
+texture2=graph/walla219.pcx
+
+; Radiactividad (en circulo) y con luz
+effect=blink_light
+texture1=graph/walla218.pcx
+texture2=graph/walla219.pcx
+
+
+;
+; Muro mech2 con H
+;
+[style]
+wall=graph/walla214.pcx
+step=graph/walla216.pcx
+floor=graph/ceila201.pcx
+ceiling=graph/ceila201.pcx
+
+pump1off=graph/walla206.pcx
+pump1on=graph/walla205.pcx
+
+pump2off=graph/walla207.pcx
+pump2on=graph/walla208.pcx
+
+console1=graph/walla210.pcx
+console2=graph/walla211.pcx
+consoleoff=graph/walla209.pcx
+
+; Mech2 con vigas
+effect=static
+texture1=graph/walla203.pcx
+
+; Simbolo chino
+effect=static
+texture1=graph/walla215.pcx
+
+; Radiactividad
+effect=static
+texture1=graph/walla217.pcx
+
+; Radiactividad (en circulo)
+effect=blink
+texture1=graph/walla218.pcx
+texture2=graph/walla219.pcx
+
+; Radiactividad (en circulo) y con luz
+effect=blink_light
+texture1=graph/walla218.pcx
+texture2=graph/walla219.pcx
+
+
+;
+; Tubos
+;
+[style]
+wall=graph/walla216.pcx
+step=graph/walla202.pcx
+floor=graph/ceila201.pcx
+ceiling=graph/ceila201.pcx
+
+
+;
+; Tubos con reja en el suelo
+;
+[style]
+wall=graph/walla216.pcx
+step=graph/walla202.pcx
+floor=graph/walla204.pcx
+ceiling=graph/ceila201.pcx
+
+
+;
+; Circulos de limo
+;
+[style]
+wall=graph/walla212.pcx
+step=graph/walla202.pcx
+floor=graph/ceila201.pcx
+ceiling=graph/ceila201.pcx
+
+; Radiactividad (en circulo)
+effect=blink
+texture1=graph/walla218.pcx
+texture2=graph/walla219.pcx
+
+; Radiactividad (en circulo) y con luz
+effect=blink_light
+texture1=graph/walla218.pcx
+texture2=graph/walla219.pcx
+
+;
+; Todo reja
+;
+[style]
+wall=graph/walla204.pcx
+step=graph/walla202.pcx
+floor=graph/walla204.pcx
+ceiling=graph/walla204.pcx

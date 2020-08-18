@@ -1,0 +1,6 @@
+splumber (1.1.0-rc1-1) unstable; urgency=low
+
+  * First debian package.
+
+ -- Angel Ortega <angel@triptico.com>  Mon, 10 Jul 2006 16:22:52 +0200
+

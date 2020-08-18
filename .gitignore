@@ -1,0 +1,8 @@
+.config.log
+Makefile
+config.cflags
+config.h
+config.ldflags
+makefile.opts
+splumber
+*.[oa]

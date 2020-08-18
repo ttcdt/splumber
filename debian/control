@@ -1,0 +1,18 @@
+Source: splumber
+Section: unknown
+Priority: optional
+Maintainer: Angel Ortega <angel@triptico.com>
+Build-Depends: debhelper (>= 5)
+Standards-Version: 3.7.2
+
+Package: splumber
+Architecture: any
+Depends: ${shlibs:Depends}
+Description: A maze solving 3D game
+ Space Plumber is a first-person 3d game, not much different to Doom and
+ Quake. The main goal is to reach the extraction pumps before the water
+ level increases swamping everything. Each of the 30 levels that conform the
+ game have progressive difficulty by adding more pumps and consoles that you
+ must deactivate first, and by making the map bigger. There are no enemies,
+ you fight against time and misorientation, and you only have your skills to
+ move inside the maze.

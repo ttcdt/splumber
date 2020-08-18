@@ -1,0 +1,38 @@
+Space Plumber Release Notes
+===========================
+
+1.10
+----
+
+This release is the first (and presumably last) from the TTCDT Dev Team.
+Don't expect any change from now.
+
+The only change is that MS Windows binaries are now 64 bit by default.
+We also got rid of that release-candidate nonsense [Tiny @ ttcdt]
+
+1.1.0-rc4
+---------
+
+ - License change: released into the public domain.
+ - New features: includes support for QDGDF 0.96 new feature
+   'embedded tar'. So, the `splumber' executable includes
+   all the necessary data (images, textures, sounds, maps, etc.).
+
+1.1.0-rc3
+---------
+
+ - New command line argument `3', to run in 3x scale mode.
+
+1.1.0-rc2
+---------
+
+ - This release includes some bugfixes and compatibility issues
+   with older systems.
+
+1.1.0-rc1
+---------
+
+ - Space Plumber has been ported to use the QDGDF library, so it's
+   compilable in a bigger variety of platforms and has some new features
+   (the most important is sound support under Linux). The game itself
+   is exactly the same.

@@ -1,0 +1,105 @@
+; Definiciones para el área 6
+
+; Información general
+name=THALIUM STORAGE
+palette=graph/a6.pal
+water_texture=graph/watera6.pcx
+
+; Sonidos generales
+snd_underwater=sound/rumour.wav
+snd_water=sound/water1.wav
+snd_left_step=sound/leftstep.wav
+snd_right_step=sound/ritestep.wav
+snd_wleft_step=sound/inh2o.wav
+snd_wright_step=sound/inh2o.wav
+snd_player_dead=sound/h2odeath.wav
+snd_pump=sound/winch2.wav
+snd_console=sound/sfx034a.wav
+snd_water_go=sound/water4.wav
+
+; sonidos aleatorios sobre el agua
+over_water_sounds=sound/drone6.wav
+over_water_sounds=sound/60.wav
+over_water_sounds=sound/hydro1.wav
+over_water_sounds=sound/hydro2.wav
+over_water_sounds=sound/drip1.wav
+over_water_sounds=sound/klaxon.wav
+over_water_sounds=sound/buzz1.wav
+over_water_sounds=sound/fl_hum1.wav
+
+; sonidos aleatorios bajo el agua
+under_water_sounds=sound/water2.wav
+under_water_sounds=sound/water3.wav
+under_water_sounds=sound/death.wav
+under_water_sounds=sound/cienci~1.wav
+under_water_sounds=sound/cienci~3.wav
+under_water_sounds=sound/drone6.wav
+under_water_sounds=sound/60.wav
+
+
+;
+; Muro pasillo con luces
+;
+[style]
+wall=graph/walla601.pcx
+step=graph/walla601.pcx
+floor=graph/flooa601.pcx
+ceiling=graph/flooa601.pcx
+
+pump1off=graph/walla409.pcx
+pump1on=graph/walla408.pcx
+
+pump2off=graph/walla410.pcx
+pump2on=graph/walla411.pcx
+
+console1=graph/walla414.pcx
+console2=graph/walla413.pcx
+consoleoff=graph/walla412.pcx
+
+effect=static
+texture1=graph/walla603.pcx
+
+effect=static
+texture1=graph/walla604.pcx
+
+effect=static
+texture1=graph/walla605.pcx
+
+;
+; Muro con granos
+;
+[style]
+wall=graph/walla602.pcx
+step=graph/walla602.pcx
+floor=graph/flooa601.pcx
+ceiling=graph/ceila601.pcx
+
+pump1off=graph/walla409.pcx
+pump1on=graph/walla408.pcx
+
+pump2off=graph/walla410.pcx
+pump2on=graph/walla411.pcx
+
+console1=graph/walla414.pcx
+console2=graph/walla413.pcx
+consoleoff=graph/walla412.pcx
+
+;
+; Muro arcos
+;
+[style]
+wall=graph/walla606.pcx
+step=graph/walla606.pcx
+floor=graph/flooa601.pcx
+ceiling=graph/flooa601.pcx
+
+pump1off=graph/walla409.pcx
+pump1on=graph/walla408.pcx
+
+pump2off=graph/walla410.pcx
+pump2on=graph/walla411.pcx
+
+console1=graph/walla414.pcx
+console2=graph/walla413.pcx
+consoleoff=graph/walla412.pcx
+

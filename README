@@ -1,0 +1,160 @@
+Space Plumber (QDGDF port) README
+=================================
+
+ Space Plumber - A maze solving 3D game
+ ttcdt <dev@triptico.com>
+ Home Page: https://triptico.com/software/splumber.html
+
+This software has been released into the public domain. See file LICENSE
+for details.
+
+This game was originally written by Ángel Ortega. The TTCDT Dev Team took
+over its maintenance (not really) in 2018. We don't plan to make any
+modification nor bugfix to this software; we will just host it and check
+that MS Windows binaries are still functional <Claire from the ttcdt, 2019>
+
+Introduction
+------------
+
+This is a special prerelease of Space Plumber, ported to use the
+QDGDF [1] library. This adds the following features to the vintage
+1.0.x version:
+
+ * Sound support under Unix; Linux OSS and esound (ESD).
+ * Win32 + DirectX native version.
+ * Improved portability (compiles cleanly under many Unix flavours
+   without the needing of patches).
+
+The disadvantages are:
+
+ * The command line options documented in [2] don't work.
+ * Gamma correction is broken.
+ * There can be more; see the TODO file for details.
+
+The game itself is unchanged from the 1997 version.
+
+ [1] http://www.triptico.com/software/qdgdf.html
+ [2] http://www.triptico.com/splumber/spparams.html [broken link]
+
+Building and installation
+-------------------------
+
+As usual:
+
+ ./config.sh
+ make
+ su -c "make install"
+
+The rest of this document is a copy & paste of the original 1997 README
+included with Space Plumber (plus some minor typo fixings):
+
+Background story
+----------------
+
+22nd century, somewhere inside planet system X-239. This recently
+discovered group of planets, all of them with a surface covered completely
+by water, has become one of the richest source for the mining industry.
+Powerful companies have installed a vast processing plant network all over
+these water worlds, carrying there all kinds of technical professionals,
+engineers, scientists and plumbers. You are a member of a plumber patrol
+that travels from planet to planet trying to solve problems in these
+wealth processors.
+
+But as all successful enterprises, these companies spend little money on
+employees.
+
+When the alarm sounds, you run to your console to read the incoming
+message. One of the biggest processing plants has a severe fault in its
+pressure system, letting pass the water inside. But, due to a recent staff
+rearranging, you are the only space plumber available at this time to make
+the things work. 'The only one?', you ask to yourself. And the trouble is
+hard: you have to run through the corridors, find the water extraction
+pumps and activate them manually, one by one. 'Manually!?', you ask again.
+But this isn't all: some levels have a security system that locks all the
+pumps. In these levels you must find first ALL the consoles, deactivate
+them, and then activate the pumps. 'Why this fu**ed security system is not
+broken?', you wonder. Well, life's that hard. And expect the light system
+to be 'unstable' in some of the areas. There is a total of 30 levels in
+the plant.
+
+The menu
+--------
+
+The menu appears after a brief introduction, showing five options.
+
+Begin
+~~~~~
+
+This option begins playing level 1. When you finish a level (activating
+all pumps and deactivating all consoles, if available), an access code for
+the next level will be shown. Write down these code, it will let you go
+directly to that level next time you run the program. After resolving a
+level the next one is launched automatically.
+
+Go Level
+~~~~~~~~
+
+This option lets you jump to one level. It ask you to enter the level
+number and its access code. After this, it works the same than the
+previous menu option.
+
+Custom
+~~~~~~
+
+This option lets you create a maze on your own. A random map will be
+generated for you. Here you can tune some parameters in order to play a
+customized area. There is a brief description on screen about each one of
+these parameters, feel free to experiment.
+
+Help
+~~~~
+
+Shows a screen with a quick reference of the keys used in the game.
+
+Quit
+~~~~
+
+Quits. (No! Really?)
+
+I'm inside. What must I do now?
+-------------------------------
+
+You're inside! Well, it isn't much different from any other first-person
+games you've already played. You see what Space Plumber sees: stairs,
+corridors, rooms. Use the cursor keys to move forward (up) and backward
+(down), the left and right arrows to turn. As the water level goes up, you
+tend to move slowly, and if you are completely under the water, you can
+swim in 3D freely, using the keys mentioned above plus the 'C' and 'D' (or
+SPACE) keys to swim down and up, respectively (you must take your head out
+the water to take oxygen, if the ceiling lets you). Also, you can look up
+and down with the PgUp and Del keys.
+
+You'll identify the pumps easily: they are on walls, and their aspect is
+that of metallic, cross or round shaped, water valves. The consoles appear
+also on walls and they look like a bricky computer monitor. To switch all
+of them on, just walk over and touch them (there is no 'use' key).
+
+You'll see a countdown timer in the lower right of the screen. It is just
+the estimated total sinking time; the game doesn't finish when it takes to
+zero, only when you die (on having 0% of oxygen) or win (activate all
+pumps). Note that the levels never sink completely: somewhere there is a
+little oxygen bag (a room not completely full of water) you can use to
+survive.
+
+Another thing: when you activate all pumps, the water extraction system
+begins to work and the water level starts to decrease. You DON'T resolve a
+level until the water goes below you; you may die without oxygen after
+activating all pumps but before the water lets you breath.
+
+The F1 key set / unset the low detail mode. This mode is faster, but the
+overall look of the rendered screen will be worse. The F3 key activate /
+deactivate what is known as motion blur mode, that is, a hybrid mode that
+renders the screen in low detail when the player is moving and in high
+detail when he is stopped. Try this one first if your computer is slow,
+and remember you must deactivate low detail to use motion blur mode.
+
+The F2 key activate/deactivate the gamma correction. If your game looks
+too dark, hit this key.
+
+Finally, you can temporally pause the game pushing the F10 key and exit to
+main menu hitting ESC.

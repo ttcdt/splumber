@@ -1,0 +1,217 @@
+; Definiciones para el área 3
+
+; Información general
+name=AIR PROCESSING
+palette=graph/a3.pal
+water_texture=graph/watera3.pcx
+
+; Sonidos generales
+snd_underwater=sound/rumour.wav
+snd_water=sound/water1.wav
+snd_left_step=sound/leftstep.wav
+snd_right_step=sound/ritestep.wav
+snd_wleft_step=sound/inh2o.wav
+snd_wright_step=sound/inh2o.wav
+snd_player_dead=sound/h2odeath.wav
+snd_pump=sound/winch2.wav
+snd_console=sound/sfx034a.wav
+snd_water_go=sound/water4.wav
+
+; sonidos aleatorios sobre el agua
+over_water_sounds=sound/drone6.wav
+over_water_sounds=sound/60.wav
+over_water_sounds=sound/drip1.wav
+over_water_sounds=sound/wind2.wav
+over_water_sounds=sound/wind2.wav
+over_water_sounds=sound/wind2.wav
+over_water_sounds=sound/klaxon.wav
+over_water_sounds=sound/buzz1.wav
+over_water_sounds=sound/fl_hum1.wav
+over_water_sounds=sound/wind2.wav
+
+; sonidos aleatorios bajo el agua
+under_water_sounds=sound/water2.wav
+under_water_sounds=sound/water3.wav
+under_water_sounds=sound/death.wav
+under_water_sounds=sound/cienci~1.wav
+under_water_sounds=sound/cienci~3.wav
+under_water_sounds=sound/drone6.wav
+under_water_sounds=sound/60.wav
+
+
+;
+; 1 Muro alien
+;
+[style]
+wall=graph/walla301.pcx
+step=graph/walla304.pcx
+floor=graph/flooa301.pcx
+ceiling=graph/walla302.pcx
+
+pump1off=graph/walla308.pcx
+pump1on=graph/walla307.pcx
+
+pump2off=graph/walla309.pcx
+pump2on=graph/walla310.pcx
+
+console1=graph/walla312.pcx
+console2=graph/walla313.pcx
+consoleoff=graph/walla311.pcx
+
+; Ventilador 1
+effect=animation
+texture1=graph/walla315.pcx
+texture2=graph/walla316.pcx
+texture3=graph/walla317.pcx
+
+; Ventilador 2
+effect=sequence
+texture1=graph/walla315.pcx
+texture2=graph/walla316.pcx
+texture3=graph/walla317.pcx
+
+; Muro placas de tortuga
+effect=static
+texture1=graph/walla303.pcx
+
+;
+; 2 Muro chapa
+;
+[style]
+wall=graph/walla314.pcx
+step=graph/walla304.pcx
+floor=graph/flooa301.pcx
+ceiling=graph/walla302.pcx
+
+
+pump1off=graph/walla308.pcx
+pump1on=graph/walla307.pcx
+
+pump2off=graph/walla309.pcx
+pump2on=graph/walla310.pcx
+
+console1=graph/walla312.pcx
+console2=graph/walla313.pcx
+consoleoff=graph/walla311.pcx
+
+; Ventilador 1
+effect=animation
+texture1=graph/walla315.pcx
+texture2=graph/walla316.pcx
+texture3=graph/walla317.pcx
+
+; Ventilador 2
+effect=sequence
+texture1=graph/walla315.pcx
+texture2=graph/walla316.pcx
+texture3=graph/walla317.pcx
+
+; Muro placas de tortuga
+effect=static
+texture1=graph/walla303.pcx
+
+;
+; 3 Muro de hexágonos asimétricos
+;
+[style]
+wall=graph/flooa301.pcx
+step=graph/walla301.pcx
+floor=graph/walla302.pcx
+ceiling=graph/walla302.pcx
+
+pump1off=graph/walla308.pcx
+pump1on=graph/walla307.pcx
+
+pump2off=graph/walla309.pcx
+pump2on=graph/walla310.pcx
+
+console1=graph/walla312.pcx
+console2=graph/walla313.pcx
+consoleoff=graph/walla311.pcx
+
+; Ventilador 1
+effect=animation
+texture1=graph/walla315.pcx
+texture2=graph/walla316.pcx
+texture3=graph/walla317.pcx
+
+; Ventilador 2
+effect=sequence
+texture1=graph/walla315.pcx
+texture2=graph/walla316.pcx
+texture3=graph/walla317.pcx
+
+; Muro placas de tortuga
+effect=static
+texture1=graph/walla303.pcx
+
+
+;
+; 4 Muro de cemento con llaves
+;
+[style]
+wall=graph/walla306.pcx
+step=graph/walla301.pcx
+floor=graph/flooa301.pcx
+ceiling=graph/flooa301.pcx
+
+pump1off=graph/walla308.pcx
+pump1on=graph/walla307.pcx
+
+pump2off=graph/walla309.pcx
+pump2on=graph/walla310.pcx
+
+console1=graph/walla312.pcx
+console2=graph/walla313.pcx
+consoleoff=graph/walla311.pcx
+
+; Ventilador 1
+effect=animation
+texture1=graph/walla315.pcx
+texture2=graph/walla316.pcx
+texture3=graph/walla317.pcx
+
+; Ventilador 2
+effect=sequence
+texture1=graph/walla315.pcx
+texture2=graph/walla316.pcx
+texture3=graph/walla317.pcx
+
+; Muro placas de tortuga
+effect=static
+texture1=graph/walla303.pcx
+
+;
+; 5 Muro de círculos
+;
+[style]
+wall=graph/ceila301.pcx
+step=graph/walla304.pcx
+floor=graph/walla302.pcx
+ceiling=graph/walla302.pcx
+
+pump1off=graph/walla308.pcx
+pump1on=graph/walla307.pcx
+
+pump2off=graph/walla309.pcx
+pump2on=graph/walla310.pcx
+
+console1=graph/walla312.pcx
+console2=graph/walla313.pcx
+consoleoff=graph/walla311.pcx
+
+; Ventilador 1
+effect=animation
+texture1=graph/walla315.pcx
+texture2=graph/walla316.pcx
+texture3=graph/walla317.pcx
+
+; Ventilador 2
+effect=sequence
+texture1=graph/walla315.pcx
+texture2=graph/walla316.pcx
+texture3=graph/walla317.pcx
+
+; Muro placas de tortuga
+effect=static
+texture1=graph/walla303.pcx

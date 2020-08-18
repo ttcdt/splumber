@@ -1,0 +1,74 @@
+# -*- Mode: sh
+
+all: $(TARGET)
+
+PROJ=splumber
+
+OBJS=sp_supp.o sp_grx.o sp_map.o sp_maze.o sp_ray.o sp_play.o sp_param.o sp_tar.o
+
+DATA=./etc/ ./extern/ ./sound/ ./graph/
+
+DIST_TARGET=/tmp/$(PROJ)-$(VERSION)
+
+##################################################################
+
+version:
+	@echo $(VERSION)
+
+.c.o:
+	$(CC) $(CFLAGS) `cat config.cflags` -c $<
+
+dep:
+	gcc -MM -I$(QDGDF) *.c | \
+	sed -e 's;qdgdf/;$$(QDGDF)/;g' -e 's;$(QDGDF)/;$$(QDGDF)/;g' > makefile.depend
+
+$(TARGET): $(OBJS) splumber.c $(QDGDF)/libqdgdf.a
+	$(CC) splumber.c $(CFLAGS) `cat config.cflags` \
+	$(OBJS) `cat config.ldflags` -o $@
+
+$(QDGDF)/libqdgdf.a:
+	(cd $(QDGDF) ; $(MAKE) libqdgdf.a)
+
+splumber.tar: etc/* extern/* graph/* sound/*
+	$(TAR) cvf $@ etc/* extern/* graph/* sound/*
+
+sp_tar.o: splumber.tar
+	$(LD) -r -b binary splumber.tar -o $@
+
+clean:
+	rm -f $(TARGET) $(LIB) $(OBJS) *.o *.exe tags .installer.c *.tar *.tar.gz *.asc *.sig
+	(cd $(QDGDF) ; $(MAKE) clean)
+
+distclean: clean
+	rm -f config.h config.cflags config.ldflags makefile.opts Makefile
+
+realclean: distclean
+	(cd $(QDGDF) ; $(MAKE) distclean)
+
+realdistclean: realclean
+
+distcopy: distclean
+	mkdir -p $(DIST_TARGET) ; \
+	tar cf - * | (cd $(DIST_TARGET) ; tar xf -)
+
+dist: distcopy
+	(cd $(QDGDF) ; $(MAKE) distcopy DIST_TARGET=$(DIST_TARGET)/qdgdf ) ; \
+	(cd /tmp ; tar czf - $(PROJ)-$(VERSION)/* ) > $(PROJ)-$(VERSION).tar.gz ; \
+	rm -rf $(DIST_TARGET)
+
+install:
+	install $(TARGET) $(PREFIX)/bin
+	mkdir -p $(PREFIX)/share/splumber
+	cp -r $(DATA) $(PREFIX)/share/splumber
+
+win32dist:
+	i586-mingw32msvc-strip splumber.exe
+	aovwinstall splumber "Space Plumber $(VERSION)" splumber.exe \
+		graph graph/* sound sound/* etc etc/* extern extern/* README
+	mv installer.exe splumber-$(VERSION).exe
+
+innosetup: splumber.exe
+	wine ~/.wine/fake_windows/Program\ Files/Inno\ Setup\ 5/ISCC.exe /O. /Fsplumber-$(VERSION) splumber.iss
+
+deb:
+	dpkg-buildpackage -rfakeroot -b -uc -us

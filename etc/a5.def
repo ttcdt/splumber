@@ -1,0 +1,131 @@
+; Definiciones para el área 5
+
+; Información general
+name=ORE REFINERY
+palette=graph/a5.pal
+water_texture=graph/watera5.pcx
+
+; Sonidos generales
+snd_underwater=sound/rumour.wav
+snd_water=sound/water1.wav
+snd_left_step=sound/leftstep.wav
+snd_right_step=sound/ritestep.wav
+snd_wleft_step=sound/inh2o.wav
+snd_wright_step=sound/inh2o.wav
+snd_player_dead=sound/h2odeath.wav
+snd_pump=sound/winch2.wav
+snd_console=sound/sfx034a.wav
+snd_water_go=sound/water4.wav
+
+; sonidos aleatorios sobre el agua
+over_water_sounds=sound/drone6.wav
+over_water_sounds=sound/60.wav
+over_water_sounds=sound/drip1.wav
+over_water_sounds=sound/fire1.wav
+over_water_sounds=sound/fire1.wav
+over_water_sounds=sound/fire1.wav
+over_water_sounds=sound/klaxon.wav
+over_water_sounds=sound/buzz1.wav
+over_water_sounds=sound/fl_hum1.wav
+over_water_sounds=sound/fire1.wav
+
+; sonidos aleatorios bajo el agua
+under_water_sounds=sound/water2.wav
+under_water_sounds=sound/water3.wav
+under_water_sounds=sound/death.wav
+under_water_sounds=sound/cienci~1.wav
+under_water_sounds=sound/cienci~3.wav
+under_water_sounds=sound/drone6.wav
+under_water_sounds=sound/60.wav
+
+
+;
+; Muro hierro
+;
+[style]
+wall=graph/walla508.pcx
+step=graph/walla501.pcx
+floor=graph/flooa501.pcx
+ceiling=graph/ceila501.pcx
+
+pump1off=graph/walla409.pcx
+pump1on=graph/walla408.pcx
+
+pump2off=graph/walla410.pcx
+pump2on=graph/walla411.pcx
+
+console1=graph/walla414.pcx
+console2=graph/walla413.pcx
+consoleoff=graph/walla412.pcx
+
+; Horno
+effect=sequence
+texture1=graph/walla505.pcx
+texture2=graph/walla506.pcx
+texture3=graph/walla507.pcx
+
+effect=static
+texture1=graph/walla513.pcx
+
+effect=static
+texture1=graph/walla514.pcx
+
+;
+; Muro ordenadores
+;
+[style]
+wall=graph/walla509.pcx
+step=graph/walla501.pcx
+floor=graph/flooa501.pcx
+ceiling=graph/ceila501.pcx
+
+pump1off=graph/walla409.pcx
+pump1on=graph/walla408.pcx
+
+pump2off=graph/walla410.pcx
+pump2on=graph/walla411.pcx
+
+console1=graph/walla414.pcx
+console2=graph/walla413.pcx
+consoleoff=graph/walla412.pcx
+
+; Monitor 1
+effect=static
+texture1=graph/walla503.pcx
+
+; Monitor 4
+effect=static
+texture1=graph/walla504.pcx
+
+effect=static
+texture1=graph/walla509.pcx
+
+effect=static
+texture1=graph/walla510.pcx
+
+effect=static
+texture1=graph/walla511.pcx
+
+effect=static
+texture1=graph/walla512.pcx
+
+
+;
+; Muro mampostería
+;
+[style]
+wall=graph/walla501.pcx
+step=graph/walla501.pcx
+floor=graph/flooa501.pcx
+ceiling=graph/flooa501.pcx
+
+pump1off=graph/walla409.pcx
+pump1on=graph/walla408.pcx
+
+pump2off=graph/walla410.pcx
+pump2on=graph/walla411.pcx
+
+console1=graph/walla414.pcx
+console2=graph/walla413.pcx
+consoleoff=graph/walla412.pcx
+

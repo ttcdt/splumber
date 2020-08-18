@@ -1,0 +1,68 @@
+Space Plumber (QDGDF port) TODO / Bug List
+==========================================
+
+Release Critical Bugs
+---------------------
+
+None!
+
+Open Bugs
+---------
+
+ * 1004: Function key F2 (gamma correct) doesn't work.
+ * 1021: Custom levels should never bang; if a maze could not
+   be generated, it should just start trying again.
+
+Pending Enhancements
+--------------------
+
+ * 1011: Use the qdgdf accumulation buffer for something.
+
+Closed
+------
+
+ * 1001: Rendering under water doesn't work (Sun, 28 Nov 2004 11:19:33 +0100).
+ * 1000: When rendering, keys don't work (X11 driver). It was related
+   with rendering functions drawing beyond the end of the virtual screen;
+   this can be the cause of the crashing on output bug (years ago) that
+   could, probably, appeared when implementing look up / down
+   (Sun, 28 Nov 2004 16:47:56 +0100).
+ * 1009: Custom levels don't work (Sun, 28 Nov 2004 17:59:15 +0100).
+ * 1007: Looped sounds that need different volume don't work (it's a
+   limitation of the QDGDF library) (Sun, 28 Nov 2004 19:41:31 +0100).
+ * 1002: On MapStartup(), m_block should be travelled freeing already
+   allocated blocks (Mon, 29 Nov 2004 08:09:00 +0100).
+ * 1013: Alternative pump graphics are shown (Mon, 29 Nov 2004 08:15:03 +0100).
+ * 1012: Sometimes InitMaze bangs on "_pumps_left || _consoles_left"
+   even if it shouldn't; can be reproduced by starting level 30
+   several times (Mon, 29 Nov 2004 08:25:57 +0100).
+ * 1017: Install data in 'make install' (Thu, 02 Dec 2004 19:21:15 +0100).
+ * 1015: Menu music loops horribly (though it seems to be a
+   QDGDF bug, no other loop in the game sounds that bad).
+   (Tue, 07 Dec 2004 13:48:54 +0100).
+ * 1016: pack_fopen() should try to open files first from ., and
+   if not found, from $PREFIX/share/splumber/ (pack_fopen() no longer
+   used; Mon, 20 Dec 2004 21:24:21 +0100).
+ * 1008: PageUp and PageDown keys (look up and down) don't work
+   (Mon, 20 Dec 2004 22:29:40 +0100).
+ * 1018: qdgdf should be built from 'make', not from 'config.sh'.
+   (Tue, 21 Dec 2004 12:17:28 +0100).
+ * 1019: Dependence on qdgdf's bug #1010, paths to qdgdfv_fopen()
+   (Sun, 09 Jan 2005 11:32:19 +0100).
+ * 1014: Sometimes, when starting a level ("Loading..."), it
+   abruptly returns to system (without apparently crasing)
+   (It was probably related to QDGDF bug #1020;
+   Sun, 09 Jan 2005 11:34:25 +0100)
+ * 1020: Levels 6, 9, 20, 24 and 29 crash on load
+   (They did because some tests were added when debugging bug #1012;
+   Sun, 09 Jan 2005 12:14:52 +0100).
+ * 1003: Function key F1 (low detail) doesn't work
+   (Sun, 09 Jan 2005 14:07:16 +0100).
+ * 1005: Function key F3 (motion blur) doesn't work
+   (Sun, 09 Jan 2005 14:07:24 +0100).
+ * 1006: Pause key doesn't work (Sun, 09 Jan 2005 14:07:41 +0100).
+ * 1010: Help screen is outdated (Sat, 26 Nov 2005 19:42:54 +0100).
+ * 1022: Random numbers are incorrectly generated under AMD64, so levels
+   doesn't match the originals (Tue, 21 Nov 2006 13:18:51 +0100).
+
+Email bugs to angel@triptico.com

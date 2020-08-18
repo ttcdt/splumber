@@ -1,0 +1,10 @@
+.config.log
+Makefile
+config.cflags
+config.h
+config.ldflags
+makefile.opts
+Changelog
+splumber
+build-stamp
+configure-stamp

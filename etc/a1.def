@@ -1,0 +1,228 @@
+; Definiciones para el área 1
+
+; Información general
+name=CORRIDORS
+palette=graph/a1.pal
+water_texture=graph/watera1.pcx
+
+; Sonidos generales
+snd_underwater=sound/rumour.wav
+snd_water=sound/water1.wav
+snd_left_step=sound/leftstep.wav
+snd_right_step=sound/ritestep.wav
+snd_wleft_step=sound/inh2o.wav
+snd_wright_step=sound/inh2o.wav
+snd_player_dead=sound/h2odeath.wav
+snd_pump=sound/winch2.wav
+snd_console=sound/sfx034a.wav
+snd_water_go=sound/water4.wav
+
+; sonidos aleatorios sobre el agua
+over_water_sounds=sound/drone6.wav
+over_water_sounds=sound/60.wav
+over_water_sounds=sound/hydro1.wav
+over_water_sounds=sound/hydro2.wav
+over_water_sounds=sound/drip1.wav
+over_water_sounds=sound/comp1.wav
+over_water_sounds=sound/klaxon.wav
+over_water_sounds=sound/buzz1.wav
+over_water_sounds=sound/fl_hum1.wav
+
+; sonidos aleatorios bajo el agua
+under_water_sounds=sound/water2.wav
+under_water_sounds=sound/water3.wav
+under_water_sounds=sound/death.wav
+under_water_sounds=sound/cienci~1.wav
+under_water_sounds=sound/cienci~3.wav
+under_water_sounds=sound/drone6.wav
+under_water_sounds=sound/60.wav
+
+
+;
+; Muro hexágono
+;
+[style]
+wall=graph/walla106.pcx
+step=graph/walla106.pcx
+floor=graph/ceila101.pcx
+ceiling=graph/ceila101.pcx
+
+pump1off=graph/walla120.pcx
+pump1on=graph/walla121.pcx
+pump2off=graph/walla115.pcx
+pump2on=graph/walla114.pcx
+
+console1=graph/walla123.pcx
+console2=graph/walla125.pcx
+consoleoff=graph/walla122.pcx
+
+; Muro hexágono sin luz
+effect=static
+texture1=graph/walla107.pcx
+
+; Muro hex con lámpara off
+effect=static
+texture1=graph/walla109.pcx
+
+; Muro hex con lámpara parpadeante
+effect=blink
+texture1=graph/walla108.pcx
+texture2=graph/walla109.pcx
+
+; Muro hex con lámpara parpadeante y luz
+effect=blink_light
+texture1=graph/walla108.pcx
+texture2=graph/walla109.pcx
+
+; Reja
+effect=static
+texture1=graph/walla102.pcx
+
+; Reja con lámpara
+effect=static
+texture1=graph/walla126.pcx
+
+; Reja con logo
+effect=static
+texture1=graph/walla127.pcx
+
+; Reja con logo parpadeante
+effect=blink_light
+texture1=graph/walla127.pcx
+texture2=graph/walla127.pcx
+
+
+;
+; Muro verde con diagonales
+;
+[style]
+wall=graph/walla110.pcx
+step=graph/walla101.pcx
+floor=graph/ceila101.pcx
+ceiling=graph/ceila101.pcx
+
+pump1off=graph/walla115.pcx
+pump1on=graph/walla114.pcx
+pump2off=graph/walla116.pcx
+pump2on=graph/walla117.pcx
+
+console1=graph/walla119.pcx
+console2=graph/walla128.pcx
+consoleoff=graph/walla118.pcx
+
+; Muro verde sin luz
+effect=static
+texture1=graph/walla103.pcx
+
+; Muro verde con lámpara off
+effect=static
+texture1=graph/walla105.pcx
+
+; Muro verde con lámpara encendida siempre
+effect=lit
+texture1=graph/walla104.pcx
+
+; Lámpara parpadeante
+effect=blink
+texture1=graph/walla104.pcx
+texture2=graph/walla105.pcx
+
+; Lámpara parpadeante con luz
+effect=blink_light
+texture1=graph/walla104.pcx
+texture2=graph/walla105.pcx
+
+; Muro normal con luz, pero con parpadeos
+effect=blink
+texture1=graph/walla101.pcx
+texture2=graph/walla103.pcx
+
+; Reja
+effect=static
+texture1=graph/walla102.pcx
+
+; Reja con lámpara
+effect=static
+texture1=graph/walla126.pcx
+
+; Reja con logo
+effect=static
+texture1=graph/walla127.pcx
+
+; Reja con logo parpadeante
+effect=blink_light
+texture1=graph/walla127.pcx
+texture2=graph/walla127.pcx
+
+; sin luz
+effect=static
+texture1=graph/walla111.pcx
+
+; con parpadeo
+effect=blink
+texture1=graph/walla110.pcx
+texture2=graph/walla111.pcx
+
+
+;
+; Muro hexágono con diagonales
+;
+[style]
+wall=graph/walla112.pcx
+step=graph/walla101.pcx
+floor=graph/ceila101.pcx
+ceiling=graph/ceila101.pcx
+
+pump1off=graph/walla120.pcx
+pump1on=graph/walla121.pcx
+pump2off=graph/walla116.pcx
+pump2on=graph/walla117.pcx
+
+console1=graph/walla123.pcx
+console2=graph/walla125.pcx
+consoleoff=graph/walla122.pcx
+
+; Muro hexágono sin luz
+effect=static
+texture1=graph/walla107.pcx
+
+; Muro hex con lámpara off
+effect=static
+texture1=graph/walla109.pcx
+
+; Muro hex con lámpara parpadeante
+effect=blink
+texture1=graph/walla108.pcx
+texture2=graph/walla109.pcx
+
+; Muro hex con lámpara parpadeante y luz
+effect=blink_light
+texture1=graph/walla108.pcx
+texture2=graph/walla109.pcx
+
+; Reja
+effect=static
+texture1=graph/walla102.pcx
+
+; Reja con lámpara
+effect=static
+texture1=graph/walla126.pcx
+
+; Reja con logo
+effect=static
+texture1=graph/walla127.pcx
+
+; Reja con logo parpadeante
+effect=blink_light
+texture1=graph/walla127.pcx
+texture2=graph/walla127.pcx
+
+; sin luz
+effect=static
+texture1=graph/walla113.pcx
+
+; con parpadeo
+effect=blink
+texture1=graph/walla113.pcx
+texture2=graph/walla112.pcx
+
